@@ -1,0 +1,58 @@
+.colors-page-widget{
+    position: relative;
+}
+.colors-page-widget .imgcover{
+    min-width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px black;
+    cursor: pointer;
+}
+.colors-page-widget img{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.colors-page-widget img:hover{
+    transform: scale(1.2);
+}
+.colors-page-widget .title{
+    width: calc(100% + 20px);
+    max-width: calc(100% + 20px);
+    cursor: pointer;
+    margin-top: 5px;
+}
+.colors-page-widget .title.text-gray > span{
+    text-decoration: line-through;
+}
+.colors-page-widget .title > span{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-transform: capitalize;
+}
+.colors-page-widget .tag{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
+.colors-main.dark .title{
+    color: white;
+}
+.colors-main.dark .title.text-gray{
+    color: gray;
+}
+
+.colors-main.dark button{
+    color: white;
+}
+.colors-main.light button{
+    color: black;
+}

@@ -1,0 +1,65 @@
+.user-message-main{
+    height: 50vh;
+    width: 500px;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 9999;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem 1rem 0.5rem 1rem;
+}
+.user-message-main .close{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+.user-message-main .content{
+    height: calc(85% - 1rem);
+    max-height: calc(85% - 1rem);
+    overflow: hidden;
+    overflow-y: auto;
+    padding-bottom: 1rem;
+}
+.user-message-main .content .widget{
+    padding: 5px 15px;
+    border-radius: 15px;
+    max-width: 60%;
+}
+.user-message-main .content .sender{
+    align-self: flex-start;
+    
+}
+.user-message-main .content .receiver{
+    align-self: flex-end;
+}
+
+.user-message-main .replybox textarea{
+    width: 80%;
+    height: 20px;
+    resize: none;
+    font-size: 1rem;
+}
+.user-message-main .replybox .img{
+    height: 25px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.user-message-main._dark,
+.user-message-main._dark .close{
+    background-color: map-get($colors, "darkaccent");
+}
+
+.user-message-main._dark textarea,
+.user-message-main._dark .img,
+.user-message-main._dark .content{
+    background-color: lighten(map-get($colors, "darkaccent"), 10%);
+    border-color: lighten(map-get($colors, "darkaccent"), 10%);
+    color: white;
+}

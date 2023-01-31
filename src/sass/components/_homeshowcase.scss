@@ -1,0 +1,155 @@
+
+
+.home-showcase{
+    position: relative;
+    min-height: 500px;
+    max-width: 100vw;
+    z-index: 2;
+    margin: 0;
+    /* background-color: #f2b669; */
+    background-color: #b28b4c;
+    border-radius: 8% 8% 0px 0px;
+    // box-shadow: 0px 2px 15px rgba(128, 128, 128, 0.5);
+    -webkit-box-shadow: 0px -8px 20px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px -8px 20px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px -8px 20px 0px rgba(0,0,0,0.5);
+}
+.home-showcase.first{
+    border-radius: 0px;
+    box-shadow: none;
+}
+.home-showcase .container{
+    /* background-color: red; */
+}
+.home-showcase .arrow{
+    margin-top: -70px;
+    animation: float2 2s ease-in-out infinite;
+    cursor: pointer;
+}
+
+.home-showcase .container{
+    text-align: center;
+}
+.home-showcase .title p{
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+}
+.home-showcase .subtitle{
+    color: white;
+}
+
+.home-showcase .showcase .item{
+    /* background-color: whitesmoke; */
+    border-radius: 50%;
+    padding: -50px;
+    position: relative;
+}
+.home-showcase .showcase .item img.merch{
+    width: calc(25vw - 1rem);
+    height: calc(25vw - 1rem);
+    animation: float3 6s ease-in-out infinite;
+    z-index: 2;
+}
+.home-showcase .showcase .item:nth-child(1) img.merch{
+    animation-delay: 2s;
+}
+.home-showcase .showcase .item:nth-child(2) img.merch{
+    width: calc(30vw);
+    height: calc(30vw);
+    animation-delay: 1s;
+}
+.home-showcase .showcase .item:nth-child(3) img.merch{
+    animation-delay: 1.5s;
+}
+
+.home-showcase .showcase .item img.merchbg{
+    max-width: 35vw;
+    max-height: 35vw;
+    position: absolute;
+    border-radius: 50%;
+    /* background-color: red; */
+}
+.home-showcase .showcase .item .merch-title{
+    /* background-color: whitesmoke; */
+    z-index: 1;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+
+.showcase-view{
+    width: 500px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+@keyframes float3 {
+    0% {
+        transform: translatey(0px);
+    }
+    
+    50% {
+        transform: translatey(10px);
+    }
+}
+
+@include sm {
+    .showcase-view{
+        width: 85vw;
+    }
+    .home-showcase .title p{
+        font-size: 1.5em;
+    }
+    .home-showcase .subtitle{
+        font-size: 0.8em;
+    }
+    .home-showcase .showcase .item img.merch{
+        width: calc(75vw - 1rem);
+        height: calc(75vw - 1rem);
+    }
+    .home-showcase .showcase .item:nth-child(2) img.merch{
+        width: calc(75vw);
+        height: calc(75vw);
+        margin-top: 2rem;
+    }
+    .home-showcase .showcase .item:nth-child(3) img.merch{
+        margin-top: 2rem;
+    }
+    .home-showcase .showcase .item img.merchbg{
+        max-width: 75vw;
+        max-height: 75vw;
+    }
+    .home-showcase{
+        border-radius: 3rem 3rem 0px 0px;
+    }
+}
+@include lg {
+    .showcase-view{
+        width: 500px;
+    }
+    .home-showcase .title p{
+        font-size: 3em;
+    }
+    .home-showcase .subtitle{
+        font-size: 1em;
+    }
+    .home-showcase .showcase .item img.merch{
+        width: calc(25vw - 1rem);
+        height: calc(25vw - 1rem);
+    }
+    .home-showcase .showcase .item:nth-child(2) img.merch{
+        width: calc(30vw);
+        height: calc(30vw);
+    }
+    .home-showcase .showcase .item:nth-child(3) img.merch{
+        margin-top: 0rem;
+    }
+    .home-showcase .showcase .item img.merchbg{
+        max-width: 35vw;
+        max-height: 35vw;
+    }
+    .home-showcase{
+        border-radius: 8% 8% 0px 0px;
+    }
+    
+}

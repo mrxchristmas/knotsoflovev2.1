@@ -1,0 +1,97 @@
+.manage-color-main .addColor{
+    height: 200px;
+    width: 900px;
+    /* background-color: red; */
+    /* border: 1px solid black; */
+    position: relative;
+}
+.manage-color-main.dark label,
+.manage-color-main.dark span{
+    color: white;
+}
+
+.manage-color-main .addColor img{
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.manage-color-main .addColor.mobile img{
+    height: 100px;
+}
+.manage-color-main .addColor .color{
+    width: 100%;
+    border-width: 0px;
+    height: 50px;
+}
+.manage-color-main .addColor .input{
+    text-transform: capitalize;
+    border-top-right-radius: 25px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.manage-color-main .addColor button{
+    border-bottom-right-radius: 25px;
+}
+
+.manage-colors-page-widget{
+    position: relative;
+    /* border: 1px solid black; */
+}
+.manage-colors-page-widget .delete{
+    position: absolute;
+    top: 20px;
+    left: 30%;
+    height: 15px;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+    /* background-color: red; */
+}
+.manage-colors-page-widget .imgcover{
+    width: calc(30% - 10px);
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px black;
+    cursor: pointer;
+    position: relative;
+    
+}
+.manage-colors-page-widget .imgcover img{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.manage-colors-page-widget img:hover{
+    transform: scale(1.2);
+}
+.manage-colors-page-widget .title{
+    width: calc(70%);
+    max-width: calc(50% + 20px);
+    height: 100%;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.manage-colors-page-widget .title.text-gray > span{
+    text-decoration: line-through;
+}
+.manage-colors-page-widget .title > span{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-transform: capitalize;
+    position: relative;
+}
+.manage-colors-page-widget .title label{
+    margin: 0px;
+    font-size: 0.8em;
+}
+.manage-colors-page-widget .title label input{
+    margin-right: 5px;
+}
+
+

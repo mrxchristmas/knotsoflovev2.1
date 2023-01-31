@@ -1,0 +1,174 @@
+.manage-sales-main{
+    padding: 0px;
+}
+.manage-sales-main .header .img{
+    height: 40px;
+    cursor: pointer;
+    padding: 10px;
+}
+.manage-sales-main .header h3{
+    padding: 5px 1rem;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.manage-sales-main.dark .header h3{
+    background-color: map-get($colors, "darkaccent" );
+    color: white;
+}
+
+.manage-sales-main .list .widget{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.manage-sales-main.dark .list .widget{
+    background-color: map-get($colors, "darkaccent" );
+    color: white;
+}
+.manage-sales-main .list .widget:last-child{
+    border-bottom: none;
+}
+.manage-sales-main .list .widget span span.sale{
+    font-size: 0.8em;
+    text-decoration: line-through;
+    color: red;
+}
+.manage-sales-main .list .widget span.sub{
+    font-size: 0.8em;
+    color: rgba(128, 128, 128, 0.5);
+}
+
+.manage-sales-main .weekheader .img{
+    height: 30px;
+    cursor: pointer;
+    padding: 5px;
+}
+.manage-sales-main .weekheader h3{
+    padding: 3px 10px;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+.manage-sales-main .weekheader h3{
+    padding: 3px 10px;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    background-color: white;
+}
+.manage-sales-main.dark .weekheader h3{
+    background-color: map-get($colors, "darkaccent" );
+    color: white;
+}
+
+
+.manage-sales-print{
+    position: absolute;
+    max-height: 70vh;
+    border-radius: 1rem;
+}
+.manage-sales-print._dark label{
+    color: white;
+}
+.manage-sales-print.mobile{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+}
+.manage-sales-print .header{
+    border-bottom: thick solid black;
+}
+.manage-sales-print .header .img{
+    height: 20px;
+}
+.manage-sales-print .header .img.close{
+    height: 30px;
+}
+.manage-sales-print .content{
+    max-width: calc(100% - 3rem);
+    max-height: 70vh;
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+.manage-sales-print .minitext{
+    font-size: 0.7rem;
+}
+.manage-sales-print .shipping-input{
+    border-width: 0px;
+    /* background-color: whitesmoke; */
+    padding: 5px 10px;
+    border-radius: 5px;
+    
+}
+
+
+
+
+.paper{
+    width: calc(8.5in);
+    height: calc(11in - 2.5rem);
+    min-width: 8.5in;
+    min-height: calc(11in - 2.5rem);
+    /* padding: 1in; */
+    /* aspect-ratio: 1 / 2.3; */
+    background-color: white;
+    /* border-bottom: thin solid black; */
+}
+.manage-sales-print.mobile .paper{
+    transform: scale(0.4);
+}
+.paper-space{
+    width: 7in;
+    max-width: 7in;
+    /* height: 9.5in; */
+    aspect-ratio: 1 / 2;
+    position: relative;
+}
+.paper-font-aureta{
+    font-size: 2.5rem;
+}
+.paper-font-aureta.huge{
+    font-size: 4rem;
+}
+.paper-logo{
+    height: 1in;
+}
+.paper-sub{
+    font-size: 0.8em;
+    color: rgba(128, 128, 128, 1);
+}
+.paper-web{
+    text-decoration: underline;
+}
+.paper-border-top{
+    border-top: thin solid grey;
+}
+
+.paper-testimony-header{
+    position: absolute;
+    height: 2in;
+    /* top: -3rem; */
+    z-index: 0;
+}
+.paper-z1{
+    z-index: 1;
+}
+
+.paper-col-item{
+    width: 60%;
+}
+.paper-col-price{
+    width: 20%;
+}
+.paper-col-amount{
+    width: 20%;
+}

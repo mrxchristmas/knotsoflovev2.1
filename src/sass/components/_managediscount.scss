@@ -1,0 +1,115 @@
+.manage-discount-main{
+    position: relative;
+    padding: 0px;
+}
+
+.manage-discount-main.dark h4,
+.manage-discount-main.dark .mini,
+.manage-discount-main.dark label,
+.manage-discount-main.dark p{
+    color: white;
+}
+
+
+
+.manage-discount-main hr{
+    width: 90%;
+    height: 0.1px;
+    /* background-color: black; */
+}
+.manage-discount-main .mini{
+    font-size: 0.7em;
+}
+.manage-discount-main .mini label{
+    padding: 5px;
+    cursor: pointer;
+}
+.manage-discount-main .mini label input{
+    cursor: pointer;
+}
+.manage-discount-main .header .input{
+    padding: 0.6rem 0.3rem;
+}
+.manage-discount-main .header button{
+    padding: 0.5rem 0.3rem;
+}
+.manage-discount-main .header .saleColors{
+    width: calc(100% - 2rem);
+    padding: 10px 1rem;
+    align-items: center;
+    display: flex;
+}
+.manage-discount-main .header .saleColors img{
+    height: 30px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+.manage-discount-main .widget{
+    position: relative;
+}
+.manage-discount-main .widget .name{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 90%;
+    overflow: hidden;
+}
+.manage-discount-main .widget .item-select{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    /* width: 4%; */
+    height: 15px;
+    aspect-ratio: 1 / 1;
+    /* max-height: 20px;
+    min-height: 10px; */
+}
+.manage-discount-main .widget img{
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+.manage-discount-main .grid-icon{
+    height: 30px;
+    aspect-ratio: 1 / 1;
+    padding: 0.3rem;
+    border: thin solid transparent;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+.manage-discount-main .grid-icon.active{
+    /* background-color: rgb(40, 40, 40); */
+    /* border: thin solid rgba(0, 0, 0, 0.3); */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+.manage-discount-main .select-all-check{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.manage-discount-main.mobile .select-all-check{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin-top: 1rem;
+}
+
+
+.manage-discount-main  fieldset{
+    border-radius: 0.5rem;
+}
+.manage-discount-main .discount{
+    text-decoration: line-through;
+    font-size: 0.85em;
+}
+
+
+
+
+
+
+
+
+
+

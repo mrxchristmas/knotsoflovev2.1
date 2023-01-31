@@ -1,0 +1,56 @@
+.about-main{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: calc(100vh - 84px);
+    padding-top: 84px;
+}
+.about-main.dark{
+    color: white;
+}
+.about-main.light{
+    color: grey;
+}
+.about-main.light .theme-title{
+    color: black;
+}
+
+.about-main .page img{
+    height: 50vh;
+    width: 50%;
+    object-fit: cover;
+}
+.about-main.mobile .page img{
+    width: calc(100% - 1rem);
+    height: 200px;
+}
+.about-main .page span{
+    font-size: 1.2rem;
+
+}
+.about-main.mobile .page span{
+    font-size: 1rem;
+    text-align: center;
+    /* margin: 0px; */
+    margin-top: 1rem;
+    margin-left: 0px;
+}
+.about-main .foot .circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+.about-main .foot .circle._dark{
+    background-color: white;
+}
+.about-main .foot .circle._light{
+    background-color: black;
+}
+.about-main .foot .circle.active{
+    background-color: grey;
+}
+
+.about-main .foot{
+    position: absolute;
+    bottom: 3rem;
+}

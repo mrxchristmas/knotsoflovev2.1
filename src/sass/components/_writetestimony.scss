@@ -1,0 +1,68 @@
+.write-testimony-main{
+    min-height: calc((100vh - 84px) - 4.5rem);
+}
+.write-testimony-main.dark h1,
+.write-testimony-main.dark h2,
+.write-testimony-main.dark h3,
+.write-testimony-main.dark span,
+.write-testimony-main.dark p{
+    color: white;
+}
+.write-testimony-main.dark textarea,
+.write-testimony-main.dark input{
+    background-color: map-get($colors, "darkaccent" );
+    color: white;
+    border-color: map-get($colors, "darkaccent" );
+}
+
+
+.write-testimony-main.writerPhotoURL{
+    border-radius: 50%;
+    height: 120px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+
+}
+.write-testimony-main .emailTest{
+    width: 350px;
+}
+
+.emailTestPass{
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.emailTestPass.pass{
+    opacity: 1;
+}
+
+.write-testimony-main .phase1{
+    transition: all 1s ease-in-out;
+}
+.write-testimony-main .phase1.close{
+    opacity: 0;
+}
+.write-testimony-main .phase1.hide{
+    display: none;
+}
+
+.write-testimony-main .phase2 textarea{
+    width: 50vw;
+    height: 200px;
+    resize: none;
+    font-size: 1rem;
+}
+
+
+.write-testimony-main .phase2{
+    transition: all 1s ease-in-out;
+    opacity: 0;
+    display: none;
+}
+.write-testimony-main .phase2.open{
+    display: flex;
+    opacity: 1;
+}
+.write-testimony-main .minitext{
+    font-size: 0.8em;
+    color: gray;
+}

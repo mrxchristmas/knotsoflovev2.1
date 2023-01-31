@@ -1,0 +1,51 @@
+
+
+$flex-direction: (
+    "row": row,
+    "rowr": row-reverse,
+    "col": column,
+    "colr": column-reverse,
+);
+$flex-justify: (
+    "center": center,
+    "start": flex-start,
+    "end": flex-end,
+    "between": space-between,
+    "around": space-around,
+    "even": space-evenly
+);
+$flex-align: (
+    "center": center,
+    "start": flex-start,
+    "end": flex-end,
+);
+
+
+// .tesst{
+
+//     // flex-direction: r;
+//     // justify-content: ;
+//     // align-items: ;
+//     // flex-start, flex-end, center, space-between, space-around;
+//     // flex-flow: ;
+
+// }
+
+@each $direction, $direction-value in $flex-direction {
+    
+    @each $align, $align-value in $flex-align {
+    
+        @each $justify, $justify-value in $flex-justify {
+    
+            .flex-#{$direction}-#{$align}-#{$justify}{
+                display: flex;
+                flex-flow: $direction-value;
+                align-items: $align-value;
+                justify-content: $justify-value;
+            }
+
+        }
+
+    }
+
+}

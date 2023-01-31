@@ -1,0 +1,12 @@
+.divider .line{
+    width: 45%;
+    height: 1px;
+    background-color: grey;
+}
+
+.divider .circle{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: grey;
+}

@@ -1,0 +1,47 @@
+.manager-nav span{
+    cursor: pointer;
+}
+.manager-nav.mobile{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    // background-color: rgb(255, 255, 255);
+    width: calc(100vw - 4rem);
+    padding: 2rem;
+    height: calc(100vh - 4rem);
+    max-height: calc(100vh - 4rem);
+}
+.manager-nav.mobile a{
+    padding: 1rem;
+    width: calc(100% - 3rem);
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+.manager-nav.dark.mobile a{
+    background-color: whitesmoke;
+    color: black;
+}
+.manager-nav.dark a{
+    background-color: unset;
+    color: white;
+}
+
+.manager-nav.light.mobile a{
+    background-color: map-get($colors, "dark" );
+    color: white;
+}
+.manager-nav.light a{
+    background-color: none;
+    color: black;
+}
+
+.manager-nav.mobile a.active{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.manager-nav.mobile .img.close{
+    height: 30px;
+    position: absolute;
+    right: 1.25rem;
+    top: 0.75rem;
+}

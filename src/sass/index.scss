@@ -1,0 +1,51 @@
+// variables & functions
+// @import 'functions';
+@import 'variables';
+
+// base & layout
+@import 'base';
+@import 'breakpoints';
+@import 'grid';
+@import 'flex';
+
+// colors
+@import "colors";
+
+// utilities (margin, padding, opacity, etc)
+@import 'components/button';
+@import 'components/input';
+@import 'utilities';
+
+// components (button, card, navbar etc)
+@import 'components/prompt';
+@import 'components/modal';
+@import 'components/navbar';
+@import 'components/homecat';
+@import 'components/home';
+@import 'components/homeshowcase';
+@import 'components/homepromotions';
+@import 'components/homecolors';
+@import 'components/gallerynav';
+@import 'components/gallerypagewidget';
+@import 'components/gallery';
+@import 'components/item';
+@import 'components/manageitem';
+@import 'components/managecategory';
+@import 'components/managenav';
+@import 'components/managecolor';
+@import 'components/managemessage';
+@import 'components/managesales';
+@import 'components/managediscount';
+@import 'components/usermessage';
+@import 'components/writetestimony';
+
+
+
+
+// .trans-scale-hover-4{
+//     // background-color: red;
+//     &:hover{
+//         transform: scale(2);
+//     }
+// }
+
