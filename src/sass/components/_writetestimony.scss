@@ -50,6 +50,7 @@
     height: 200px;
     resize: none;
     font-size: 1rem;
+    width: 100%;
 }
 
 
@@ -57,6 +58,7 @@
     transition: all 1s ease-in-out;
     opacity: 0;
     display: none;
+    width: calc(100vw - 4rem);
 }
 .write-testimony-main .phase2.open{
     display: flex;
@@ -65,4 +67,24 @@
 .write-testimony-main .minitext{
     font-size: 0.8em;
     color: gray;
+}
+
+@include sm{
+    .write-testimony-main .phase2{
+        transition: all 1s ease-in-out;
+        opacity: 0;
+        display: none;
+        width: calc(100vw - 4rem);
+    }
+    
+}
+
+@include lg{
+    .write-testimony-main .phase2{
+        transition: all 1s ease-in-out;
+        opacity: 0;
+        display: none;
+        width: calc(50vw - 4rem);
+    }
+    
 }

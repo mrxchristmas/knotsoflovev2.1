@@ -88,14 +88,14 @@ export default function WriteTestimony() {
                         </Link>
                     ))}
                     
-                    <textarea className={`input mt-1 `} placeholder="Here are some questions to help you with your Testimony. 1) How do you like the items you bought? 2) where did you learn of us? eg. social media, friends etc. 3) are you willing to refer us to your friends and collegues?"></textarea>
+                    <textarea className={`input mt-1`} placeholder="Here are some questions to help you with your Testimony. 1) How do you like the items you bought? 2) where did you learn of us? eg. social media, friends etc. 3) are you willing to refer us to your friends and collegues?"></textarea>
                     <button onClick={handleSubmit} className="btn-green mt-1">Submit</button>
                 </div>
 
             </div>
         }
         {document && !document.isAvailable && 
-            <div className={`write-testimony-main container flex-col-center-start mt-4 ${theme}`}>
+            <div className={`write-testimony-main container flex-col-center-start mt-4 text-align-center ${theme}`}>
                 <h1>We appreciate you writing a Testimony for us!</h1>
                 <h2 className="mt-1">You're qualified for a $5 OFF discount on your next purchase</h2>
                 <h3 className="mt-1">See you! Till then</h3>

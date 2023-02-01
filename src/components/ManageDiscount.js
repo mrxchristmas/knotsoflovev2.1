@@ -46,47 +46,6 @@ export default function ManageDiscount() {
 
     const [grid, setGrid] = useState(2);
 
-    // useEffect(() => {
-    //     if(documents){
-    //         console.log(documents);
-    //         // console.log( filterColor("2kzKARm9L8XkiwF2DqoP") );
-    //         // console.log(filterCategory("CK2uErQ3b4lKRRjc8bs5"));
-    //         // console.log(filterPrice(">=", "50"));
-    //         // console.log(filterName("square"));
-    //         // setFilteredItems(documents)
-    //         // handleSearchClick()
-    //     }
-    // }, [documents]);
-
-    // filter by color/s        OK
-    // filter by name           OK
-    // filter by price          OK
-    // filter by category       OK
-
-    // const filterColor = (doc, colors) => {
-        
-    //     let ret = []
-    //     doc && doc.forEach(d => {
-    //         d.images.forEach(img => {
-    //             img.colors.forEach(c => {
-    //                 colors.forEach(cc => {
-    //                     if(c === cc.value){
-    //                         // ret.push(d)
-    //                         let x = true
-    //                         ret.forEach(r => {
-    //                             if(d.id === r.id){
-    //                                 x = false
-    //                             }
-    //                         })
-    //                         x && ret.push(d)
-    //                     }
-    //                 })
-    //             })
-    //         })
-    //     })
-    //     // console.log(ret);s
-    //     return ret
-    // }
     const filterCategory = (doc, cat) => {
         let ret = []
         doc && doc.forEach(d => {
@@ -565,7 +524,7 @@ export default function ManageDiscount() {
         <div className="widget-container w-100 mt-2 flex-col-center-start">
             <div className="row gap-1 w-100">
                 {filteredItems && filteredItems.map(item => (
-                    <div key={item.id} title={item.name} onClick={() => handleItemSelectChange(item)} className={`widget p-0-1-1-0 col-12-sm col-${grid === 1 ? "12" : grid === 2 ? "6" : grid === 3 ? "4" : "3"}-lg flex-row-start-between`}>
+                    <div key={item.id} title={item.name} onClick={() => handleItemSelectChange(item)} className={`widget p-0-1-1-0 col-12-sm col-${grid === 1 ? "12" : grid === 2 ? "6" : grid === 3 ? "4" : "3"}-md flex-row-start-between`}>
                         <input type="checkbox" checked={item.isSelected ? true : false} onChange={() => handleItemSelectChange(item)} className="item-select" />
                         <img src={item.images[0].url} alt="" />
                         <div className="flex-col-start-start w-70 pl-1">

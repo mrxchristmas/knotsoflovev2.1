@@ -7,7 +7,7 @@ import { Timestamp } from 'firebase/firestore';
 import { useAuthContext } from '../hooks/useAuthContext';
 import { rngPassword } from '../helper/helper';
 import { PaperPlane, Xmark } from '../helper/iconhelper';
-
+import { useIsMobile } from '../hooks/useIsMobile';
 
 export default function UserMessage({ isOpen, setIsOpen }) {
     
@@ -15,6 +15,7 @@ export default function UserMessage({ isOpen, setIsOpen }) {
     const { user, theme } = useAuthContext()
     const { document: ordersObj } = useDocument('orders', user && user.uid)
     const { setDocument } = useFirestore('orders')
+    const { isMobile } = useIsMobile()
 
     const contentRef = useRef(null)
 
@@ -91,11 +92,11 @@ export default function UserMessage({ isOpen, setIsOpen }) {
 
     return (<>
         { isOpen && 
-            <div onFocus={handleFocus} className={`user-message-main bg-whitesmoke p-2 flex-col-center-between _${theme}`}>
+            <div onFocus={handleFocus} className={`user-message-main bg-whitesmoke p-2 flex-col-center-between _${theme} ${isMobile && "mobile"}`}>
                 <Xmark color={theme === "dark" ? "white" : "black"} onClick={() => setIsOpen(false)} className='close'/>
                 <div className="content bg-white w-100 flex-col-center-start">
                     {ordersObj && ordersObj.messages.map(msg => (
-                        <span key={msg.id} className={msg.sender === user.uid ? "widget receiver bg-blue m-1-1-0-1 text-white" : "widget sender bg-darkaccent m-1-1-0-1 "}>{msg.message}</span>
+                        <span key={msg.id} className={msg.sender === user.uid ? "widget receiver bg-blue m-1-1-0-1 text-white" : `widget sender ${theme === "dark" ? "bg-darkaccent" : "bg-whitesmoke"} m-1-1-0-1 ` }>{msg.message}</span>
                     ))}
                     <div ref={contentRef} />
                 </div>

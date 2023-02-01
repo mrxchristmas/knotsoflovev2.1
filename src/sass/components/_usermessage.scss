@@ -8,6 +8,16 @@
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     border-radius: 1rem 1rem 0.5rem 1rem;
 }
+.user-message-main.mobile{
+    height: 60vh;
+    width: calc(100vw - 3rem);
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 9999;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem 1rem 0.5rem 1rem;
+}
 .user-message-main .close{
     height: 30px;
     width: 30px;
@@ -40,13 +50,14 @@
 }
 
 .user-message-main .replybox textarea{
-    width: 80%;
+    width: calc(80% - 1rem);
     height: 20px;
     resize: none;
     font-size: 1rem;
 }
 .user-message-main .replybox .img{
     height: 25px;
+    // width: calc();
     border-radius: 12px;
     cursor: pointer;
 }

@@ -10,3 +10,7 @@
     border-radius: 50%;
     background-color: grey;
 }
+
+.login-main{
+    min-height: calc( (100vh - 84px) - 6rem );
+}

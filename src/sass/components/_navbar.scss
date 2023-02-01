@@ -4,6 +4,8 @@
   position: relative;
   z-index: 2;
   box-shadow: 1px 0px 3px rgba(128, 128, 128, 0.405);
+  
+  z-index: 100;
 }
 .nav-main.dark{
   // background: linear-gradient(45deg, #dca 12%, transparent 0, transparent 88%, #dca 0),
